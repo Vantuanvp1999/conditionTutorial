@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let browser= prompt("Enter browser name!")
+    switch (browser){
+        case "Edge":
+            alert("you've got the Edge");
+            break;
+        case "Chrome":
+        case "Firefox":
+        case "Safari":
+        case "Opera":
+            alert("OK we support these browsers too!");
+            break;
+        default:
+            alert("We hope that this page look OK!");
+    }
+</script>
 </body>
 </html>
