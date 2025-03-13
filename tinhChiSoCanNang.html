@@ -15,15 +15,17 @@
           weight= document.getElementById("weight").value;
           height = document.getElementById("height").value;
           let bmi = weight/(height^2);
+          let result1
             if (bmi < 18.5) {
-                document.getElementById("result").innerHTML = "Chỉ số BMI la "+ bmi+".Bạn thiếu cân";
+               result1 = "Chỉ số BMI la "+ bmi+".Bạn thiếu cân";
             } else if (bmi < 25.0) {
-                document.getElementById("result").innerHTML = "Chỉ số BMI la "+ bmi+".Bạn bình thường";
+                result1 = "Chỉ số BMI la "+ bmi+".Bạn bình thường";
             } else if (bmi < 30.0) {
-                document.getElementById("result").innerHTML = "Chỉ số BMI la "+ bmi+".Bạn thừa cân";
+                result1 = "Chỉ số BMI la "+ bmi+".Bạn thừa cân";
             } else {
-                document.getElementById("result").innerHTML = "Chỉ số BMI la "+ bmi+".Bạn béo phì";
+                result1 = "Chỉ số BMI la "+ bmi+".Bạn béo phì";
             }
+            document.getElementById("result").innerHTML = result1;
         }
     </script>
 </body>
